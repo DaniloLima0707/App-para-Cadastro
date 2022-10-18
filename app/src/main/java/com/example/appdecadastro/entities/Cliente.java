@@ -1,10 +1,10 @@
 package com.example.appdecadastro.entities;
 
-public class Fornecedor {
+public class Cliente {
 
     private Integer id;
-    private String nomeFantasia;
-    private String CNPJ;
+    private String nome;
+    private String CPF;
     private String telefone;
     private String email;
 
@@ -16,20 +16,20 @@ public class Fornecedor {
         this.id = id;
     }
 
-    public String getNomeFantasia() {
-        return nomeFantasia;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeFantasia(String nomeFantasia) {
-        this.nomeFantasia = nomeFantasia;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getCNPJ() {
-        return CNPJ;
+    public String getCPF() {
+        return CPF;
     }
 
-    public void setCNPJ(String CNPJ) {
-        this.CNPJ = CNPJ;
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
     }
 
     public String getTelefone() {
@@ -49,4 +49,3 @@ public class Fornecedor {
     }
 
 }
-
