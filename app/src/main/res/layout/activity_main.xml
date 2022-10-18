@@ -6,13 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".Activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/botaoProdutos"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="69dp"
+        android:text="@string/produtos"
+        app:layout_constraintEnd_toStartOf="@+id/botaoClientes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/botaoClientes"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/clientes"
+        app:layout_constraintBottom_toTopOf="@+id/botaoFornecedores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botaoFornecedores"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="61dp"
+        android:text="@string/fornecedores"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoProdutos" />
+
+    <Button
+        android:id="@+id/botaoSair"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/sair"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoFornecedores" />
 </androidx.constraintlayout.widget.ConstraintLayout>
